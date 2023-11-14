@@ -1,0 +1,67 @@
+@import url(./modules/table.scss);
+@import url(./modules/navbar.scss);
+
+body {
+  background-color: #000;
+
+  .search-box {
+    &__container {
+      position: relative;
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      vertical-align: middle;
+      > span {
+        &::before {
+          position: absolute;
+          top: 2px;
+          left: 8px;
+          z-index: 2;
+          content: "\f002";
+          font-family: FontAwesome;
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: inherit;
+          color: #fff;
+        }
+      }
+      > input[type="text"] {
+        background-color: transparent;
+        color: #fff;
+        padding-left: 30px;
+      }
+    }
+  }
+  
+  .page-item {
+    .page-link {
+      color: #fff;
+      background-color: transparent;
+      border: unset;
+
+      &:hover {
+        border-color: unset;
+      }
+
+      &:focus {
+        outline: unset;
+        box-shadow: unset;
+      }
+    }
+
+    &.disabled,
+    .disabled > & {
+      background-color: transparent;
+      border-color: unset;
+    }
+
+    &.active,
+    .active > & {
+      border-color: unset;
+      .page-link {
+        background-color: #0d6efd;
+      border-radius: 5px;
+      }
+    }
+  }
+}

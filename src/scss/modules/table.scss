@@ -1,0 +1,18 @@
+body{
+  .table {
+    td,th {
+      --bs-table-bg:#000;
+      color: #fff;
+    }
+    > thead{
+      border: 1px solid #456db5;
+      background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+      background-color: unset;
+    >tr{
+      >th{
+        width: 14.28%;
+      }
+    }
+    }
+  }
+}

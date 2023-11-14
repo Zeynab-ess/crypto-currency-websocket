@@ -1,0 +1,52 @@
+@import url(./modules/table.scss);
+@import url(./modules/navbar.scss);
+body {
+  background-color: #000;
+}
+body .search-box__container {
+  position: relative;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  vertical-align: middle;
+}
+body .search-box__container > span::before {
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  z-index: 2;
+  content: "\f002";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  color: #fff;
+}
+body .search-box__container > input[type=text] {
+  background-color: transparent;
+  color: #fff;
+  padding-left: 30px;
+}
+body .page-item .page-link {
+  color: #fff;
+  background-color: transparent;
+  border: unset;
+}
+body .page-item .page-link:hover {
+  border-color: unset;
+}
+body .page-item .page-link:focus {
+  outline: unset;
+  box-shadow: unset;
+}
+body .page-item.disabled, .disabled > body .page-item {
+  background-color: transparent;
+  border-color: unset;
+}
+body .page-item.active, .active > body .page-item {
+  border-color: unset;
+}
+body .page-item.active .page-link, .active > body .page-item .page-link {
+  background-color: #0d6efd;
+  border-radius: 5px;
+}/*# sourceMappingURL=app.css.map */
